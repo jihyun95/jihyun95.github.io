@@ -1,0 +1,134 @@
+body{
+    font-family: 'Assistant', sans-serif;
+    background-color: #161719;
+    margin: 1px;
+    font-weight: normal;
+    min-width: 560px
+}
+
+
+.big{
+    padding-bottom: 5%
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #161719;
+     letter-spacing: 0.3em;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 3px;
+    padding: 14px 50px;
+    font-size:18px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #35363a;}
+
+.main{
+   color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    letter-spacing: 0.3em;
+    font-size: 45px;
+
+}
+
+.main h1{
+    font-size: 45px
+}
+
+.main h2{
+    font-weight: normal;
+}
+
+.box{
+     display: flex;
+    justify-content:flex-start;
+    text-align: left;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 0px;
+    font-size: 20px;
+    background-image: url(../img/back.png);
+}
+
+.mini{
+    flex:1;
+    color: white;
+    padding: 2%;
+    letter-spacing: 0.1em;
+}
+
+.image{
+
+}
+
+.mini p{
+    margin-top:0px;
+    margin-bottom: 50px;
+    
+}
+
+.button{
+    padding: 2%;
+    margin-left: 70%;
+    font-size: 25px;
+}
+
+.button a:link 
+{ color: white; text-decoration: none;}
+ .button a:visited 
+{ color: white; text-decoration: none;}
+ .button a:hover 
+{ color: white; text-decoration: underline;}
+
+
+
+.bottom{
+    background-color: #35363a;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding:0% 5%;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+.home{
+    flex: 1;
+    text-align: left;
+    margin: 3%;
+  
+}
+
+
+ .home a:link 
+{ color: white; text-decoration: none;
+}
+
+ .home a:visited {
+     color: white; 
+     text-decoration: none;
+}
+ .home a:hover 
+{ color: #161719;}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+}
+

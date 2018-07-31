@@ -1,0 +1,139 @@
+body{
+    font-family: 'Assistant', sans-serif;
+    background-color: #161719;
+    margin: 1px;
+    font-weight: normal;
+    min-width: 560px;
+}
+
+.big{
+    padding-bottom: 5%
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #161719;
+     letter-spacing: 0.3em;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 3px;
+    padding: 14px 50px;
+    font-size:18px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #35363a;}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    letter-spacing: 0.3em;
+    font-size: 45px;
+
+}
+
+
+
+.parent{
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 5% 2% 5%;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+.mini{
+background-color: white;
+    margin: 10px;
+padding: 10px;
+text-align: center;
+    background: white; 
+    -webkit-transition: width 2s;
+    transition: width 2s;
+ width: 400px;
+
+}
+
+.mini:hover {
+  width: 500px;
+}
+.parent h4{
+    font-style: oblique;
+    font-size: 30px;
+    margin: 1%;
+}
+
+ .mini a:link 
+{ color:#161719 ; text-decoration: none;}
+ .mini a:visited 
+{ color: #161719; text-decoration: none;}
+ .mini a:hover 
+{ color: #161719; text-decoration: underline;}
+
+.parent p{
+    margin: 1%;
+}
+
+.yufuin{
+    background-color: #161719;
+    width: 400px;
+    height: 450px;
+    border: 2px solid white;
+}
+
+
+.yufuin h4{
+    color: white;
+    padding-top:210px;
+    
+}
+
+
+
+.bottom{
+    background-color: #35363a;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding:0% 5%;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+.home{
+    flex: 1;
+    text-align: left;
+    margin: 3%;
+  
+}
+
+
+ .home a:link 
+{ color: white; text-decoration: none;
+}
+
+ .home a:visited {
+     color: white; 
+     text-decoration: none;
+}
+ .home a:hover 
+{ color: #161719;}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+}
+
