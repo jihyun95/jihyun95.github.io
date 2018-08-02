@@ -1,0 +1,150 @@
+/* LOGO AND NAV IN FIXED POSITION */
+.nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 10;
+    z-index: 90;
+    width: 100%;
+    height: 60px;
+    background-color: #F4F2F3;    
+}
+img {width:100%;}
+
+a {text-decoration:none;
+    color:#000000;}
+.wrapper {
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%; 
+    height: 60px;
+    background-color: #FFFFFF;
+    bottom: 0px;     
+}
+.logo{
+    background-color: #FFFFFF; 
+    height:150px;
+    background-image:url('img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 40px;
+
+}
+.nav {
+    background-color: #FFFFFF;
+}
+
+
+.nav li {
+    flex:1;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+/* INTRO PORTION */
+.rowtop {
+    font-family: 'Amatic SC', cursive;
+    margin-top:230px;
+    height:476px;
+	width:auto;
+	display:flex;
+	justify-content:center;
+		}
+
+.sec {
+    width:40%;
+	padding:10px;
+	 border:solid 2px #C34A36;
+  
+	}
+
+.sec_coffee {
+    background-image: url(img/topcoffee.jpg);
+    background-size: cover;
+    width: 50%;
+    align-content:center;
+    border:solid 2px #C34A36;
+       }
+
+/* BEANS PORTION */
+.row {
+        font-family: 'Amatic SC', cursive;
+        margin-top:80px;
+        height:720px;
+		width:auto;
+		display:flex;
+        justify-content:center;
+		}
+/* BEANS SECTIONS */
+.sec1 {
+    width:40%;
+	padding:10px;
+	 border:solid 2px #C34A36;
+  
+	}
+
+.sec2 {
+    background-image: url(img/beans.jpg);
+    background-size: cover;
+    width: 50%;
+    align-content:center;
+    border:solid 2px #C34A36;
+       }
+
+/* DRINK PORTION */
+.drink-row {
+    font-family: 'Amatic SC', cursive;
+    margin-top:80px;
+    height:400px;
+	width:auto;
+	display:flex;
+	justify-content:center;
+            }
+/* DRINK SECTIONS */
+.sec3 {
+    width:40%;
+	padding:10px;
+    border:solid 2px #C34A36;
+       }
+
+.sec4 {
+    background-image: url(img/drinks.jpg);
+    background-size: cover;
+    width: 50%;
+    align-content:center;
+    border:solid 2px #C34A36;
+      }
+
+
+/* RECIPE PORTION */
+.recipe-row {
+    font-family: 'Amatic SC', cursive;
+    margin-top:80px;
+    height:550px;
+	width:auto;
+	display:flex;
+    justify-content:center;
+		     }   
+/* RECIPE SECTIONS */
+.rec1 {
+    width:33%;
+	border:solid 2px #C34A36;
+  	 }
+
+.rec2 {
+      width:33%;
+	  border:solid 2px #C34A36;
+      }
+
+.rec3 {
+      width:33%;
+	  border:solid 2px #C34A36;
+       }
