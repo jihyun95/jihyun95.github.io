@@ -3,10 +3,16 @@ body{
     background-color: #161719;
     margin: 1px;
     font-weight: normal;
-    min-width: 560px;
+    max-width: 100%;
+      
 }
 
-
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .big .bottom
+    {width: 100%;}
+    
+  }
 
 
 ul {
@@ -16,6 +22,7 @@ ul {
     overflow: hidden;
     background-color: #161719;
      letter-spacing: 0.3em;
+    max-width: 100%;
 }
 
 
@@ -28,9 +35,10 @@ li a {
     color: white;
     text-align: center;
     margin: 3px;
-    padding: 14px 50px;
-    font-size:18px;
+    padding: 11px 28px;
+    font-size:13px;
     text-decoration: none;
+      max-width: 100%;
 }
 li a:hover {
     background-color: #35363a;}
@@ -38,25 +46,40 @@ li a:hover {
 
 .main{
   background-image: url("../img/color.png");
+    max-width: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 800px;
     padding:5%;
     color: white;
 
 }
 
+@media only screen and (max-width:500px){    
+    .main {
+        height: 600px; 
+        background-image: url(../img/colormobile.png);}
+    .text{
+        margin-top: 25%;
+        background-color: #161719;opacity :0.9;
+        border: 2px solid white;
+        font-weight: normal;  
+        letter-spacing: 0.1em;
+    }
+}
+
 
 .text{
-    font-size: 30px;
+    font-size: 2vh;
     text-align: left;
     background-color: #161719;opacity :0.9;
     border: 2px solid white;
     font-weight: normal;  
     letter-spacing: 0.1em;
-    min-height: 150px;
-    max-width: 650px;
+    min-height: 100px;
+    width: 650px;
+    max-width: 100%;
     padding:1%;
     margin-top: 380px;
 }
@@ -67,7 +90,7 @@ li a:hover {
     background-color:#35363a ; 
     padding: 2%;
     color:black;
-    font-size: 25px;
+    font-size: 2vh;
 }
 
 .button a:link 
@@ -78,59 +101,83 @@ li a:hover {
 { color: white; text-decoration: underline;}
 
 
-.definition{
+.flex-grid{
      display: flex;
-    justify-content:center;
+    justify-content:space-around;
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    height: 800px;
+    flex-flow: row; 
+  flex-wrap: wrap;
+
 }
 
 .definition img{
-   width: 700px;
+   width: auto;
 }
 
-.def{
-    flex: 1;
+.flex-grid .col{
+    flex:1;
     padding:3%;
 }
 
 .para{
-    min-width: 700px;
     color: white;
     letter-spacing: 0.1em;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: normal;
-    padding: 240px 10%
+    padding: 240px 10%;
+    height: auto;
+    width: 100%;
 }
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .flex-grid 
+    { display: block; margin: 20% 0%}
+    .col{ width: 100%; margin: 0 0 1px 0; padding:0; }
+    .para{ padding: 0; text-align: left;
+    }
+    .img{
+        width: 400px;
+        height: auto;
+    }
+  }
+
 
 .para h2{
     color: #c91f27;
-    font-size: 30px;
     text-align: center;
     font-style: italic;
+    width: 100%;
 }
 
 
 
+
+.select h2{
+    margin-right: 2%;
+    font-size: 5vh;
+    margin:0% 5%;
+    padding-top: 3%;
+    text-align: center;
+    color: white;
+    
+}
 
 .parent{
     display: flex;
     justify-content:center;
     text-align: center;
-    font-size: 30px;
-    padding: 5% 5%;
-    margin:0% 5%;
+    font-size: 2vh;
+    padding: 3% 5%;
+    margin:1% 5%;
     letter-spacing: 0.1em;
     color: white;
 }
 
-.parent h2{
-    margin-right: 2%;
-}
+
 
 .mini{
     width: 330px;
@@ -145,6 +192,18 @@ li a:hover {
 
 .mini:hover {
   width: 1100px;
+}
+
+
+@media only screen and (max-width:400px){    
+    .mini {
+        max-width: 500px; 
+        flex: 1;
+        margin-bottom: 30%;
+    }
+    .select h2{ padding-top: 10%; text-align: left;
+        
+    }
 }
 
 .image{
@@ -180,17 +239,32 @@ li a:hover {
     background-color: #35363a;
     color: white;
     display: flex;
+    
     justify-content: space-around;
     padding:0% 5%;
-    font-size: 20px;
+    font-size: 2vh;
     letter-spacing: 0.1em;
+   
 }
 .home{
     flex: 1;
     text-align: left;
     margin: 3%;
+     max-width: 100%;
+    height: auto;
+        overflow: hidden;
+
   
 }
+
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .bottom
+    { display: block; margin: 20% 0%}
+    .home{ width: 100%; margin: 0 0 1px 0; padding:0; }
+    
+    }
 
 
  .home a:link 
@@ -207,5 +281,6 @@ li a:hover {
 .social{
     display: flex;
     justify-content: space-around;
+ 
 }
 
